@@ -27,3 +27,31 @@ npm i --save @fortawesome/free-brands-svg-icons
 ```
 npm i --save @fortawesome/react-fontawesome@latest
 ```
+
+## Add bootstrap and config for SCSS
+
+**Add bootstrap**
+
+```
+npm i bootstrap react-bootstrap
+```
+
+**Config for SCSS**
+
+Put the following in `vite.config.js`
+```
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern',
+      },
+    },
+  },
+})
+```
