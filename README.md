@@ -36,6 +36,11 @@ npm i --save @fortawesome/react-fontawesome@latest
 npm i bootstrap react-bootstrap
 ```
 
+**Install sass**
+```
+npm i sass
+```
+
 **Config for SCSS**
 
 Put the following in `vite.config.js`
@@ -54,4 +59,9 @@ export default defineConfig({
     },
   },
 })
+```
+
+## Install React Router (version 6)
+```
+npm i react-router-dom@6
 ```
